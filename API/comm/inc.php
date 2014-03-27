@@ -1,0 +1,2 @@
+<?php die('forbidden'); ?>
+{"appid":"101047043","appkey":"ba117d75cd37f9d95bc15f3a1ad9faeb","callback":"stockwatch.sinaapp.com/Connect2.1/example/oauth/callback.php","scope":"<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>,<?=$val?>","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}
