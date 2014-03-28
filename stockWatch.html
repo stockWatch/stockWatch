@@ -51,12 +51,8 @@
           <a class="navbar-brand" href="#">StockWatch Toolkit</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li id="qqLoginBtn"></li>
-          </ul>
-
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=907150175&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:907150175:52" alt="点击这里给我发消息" title="点击这里给我发消息"/>907150175</a></li>
+            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=907150175&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:907150175:52" alt="点击这里给我发消息" title="点击这里给我发消息"/>907150175</a></li>
           </ul>
         </div><!--/.nav-collapse -->
 		</div><!--/.contianer -->
@@ -158,30 +154,6 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 
 </script>
-
-
-
-
-<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101047043" data-redirecturi="http://stockwatch.sinaapp.com/callback.php" charset="utf-8"></script>
-<script type="text/javascript">
-   QC.Login({
-       btnId:"qqLoginBtn"
-   }, function(reqData, opts){
-       var dom = document.getElementById(opts['btnId']),
-       _logoutTemplate=[
-            '<a><img src="{figureurl}"/>',
-            '{nickname}</a><a href="javascript:QC.Login.signOut();">退出</a>'
-       ].join("");
-       dom && (dom.innerHTML = QC.String.format(_logoutTemplate, {
-           nickname : QC.String.escHTML(reqData.nickname),
-           figureurl : reqData.figureurl
-       }));
-   }, function(opts){
-         alert('QQ登录 注销成功');
-   }
-);
-</script>
-
 
   </body>
 </html>
